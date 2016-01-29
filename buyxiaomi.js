@@ -1,20 +1,44 @@
 var http = require('http');
 
-var spa = require('D:\\node\\node_modules\\superagent');
+//var spa = require('D:\\node\\node_modules\\superagent');
+//var http = require('http');
 
-setInterval(function () {spa
-	.get("http://cart.mi.com/cart/add/2152700002")
+var spa = require('C:\\Users\\Administrator\\AppData\\Roaming\\npm\\node_modules\\superagent');
+
+
+
+function a(){
+	setInterval(function () {spa
+	.get("http://cart.mi.com/cart/add/2160100031")
 	.query({jsonpcallback:'jQuery11130995856573805213_1453949234208',_:'1453949234209'})
-	.end(function(data){
-		console.log(data);
-});},10);
+	.set('Cookie','muuid=1451722291558_2635; xmuuid=XMGUEST-1E88EDE0-C038-11E5-A57F-292260E4EC20; qh[360]=1; mucid=12481.0001A100219138; muctm=; muctmr=; mutid=12481.0001l0dRF964opwNJYn55aef160129092900; AWSELB=717359E51ECF69FBB072CF5F1FD918BF783E0B6A30D7D8D2BAC0E7EA48A0A5080B85046D1E350DAF35F7DE31055F89C2E41D654AE4122C150E177EB7EDAF2DF8AB2BE9587D; xm_link_history=UMHKqCZ1EprNK0P6IhPIOn54%2BDoK1OlUa%2BsV9Zf%2FBS0%3D; xm_order_btauth=ff0fee403b51394afdf7ebe826683b1f; userId=172011891; XM_172011891_UN=.%E4%B8%B8%E5%AD%90; mudjc=12481.0001l0dRF964opwNJYn55aef160129092900; msttime=http%3A%2F%2Fitem.mi.com%2Fbuyphone%2Fhongmi2; msttime1=http%3A%2F%2Fitem.mi.com%2Fbuyphone%2Fhongmi2; lastsource=a.union.mi.com; mstz=766dbbdcc6eafc2c-f572de5474b4f279|%2F%2Fitem.mi.com%2Fbuyphone%2Fhongmi2|1108113993.13|pcpid|http%3A%2F%2Fwww.mi.com%2Fhongmi2%2F|http%3A%2F%2Fwww.mi.com%2F; mstuid=1453378297020_4069; xm_vistor=1453378297020_4069_1454030961064-1454031012660; xm_user_www_num=2')
+	.end(function(res){
+		console.log(res);
+});},50);
 //http://cart.mi.com/cart/add/1155000004-2142900032%7C2153900027%7C2142900027?jsonpcallback=jQuery11130607881473377347_1453959875380&_=1453959875383
-
+!function () {spa
+	.get("http://cart.mi.com/cart/add/1155000004-2142900032%7C2153900027%7C2142900027")
+	.query({jsonpcallback:'jQuery11130607881473377347_1453959875380',_:'1453959875383'})
+	.set('Cookie','muuid=1451722291558_2635; xmuuid=XMGUEST-1E88EDE0-C038-11E5-A57F-292260E4EC20; qh[360]=1; mucid=12481.0001A100219138; muctm=; muctmr=; mutid=12481.0001l0dRF964opwNJYn55aef160129092900; AWSELB=717359E51ECF69FBB072CF5F1FD918BF783E0B6A30D7D8D2BAC0E7EA48A0A5080B85046D1E350DAF35F7DE31055F89C2E41D654AE4122C150E177EB7EDAF2DF8AB2BE9587D; xm_link_history=UMHKqCZ1EprNK0P6IhPIOn54%2BDoK1OlUa%2BsV9Zf%2FBS0%3D; xm_order_btauth=ff0fee403b51394afdf7ebe826683b1f; userId=172011891; XM_172011891_UN=.%E4%B8%B8%E5%AD%90; mudjc=12481.0001l0dRF964opwNJYn55aef160129092900; msttime=http%3A%2F%2Fitem.mi.com%2Fbuyphone%2Fhongmi2; msttime1=http%3A%2F%2Fitem.mi.com%2Fbuyphone%2Fhongmi2; lastsource=a.union.mi.com; mstz=766dbbdcc6eafc2c-f572de5474b4f279|%2F%2Fitem.mi.com%2Fbuyphone%2Fhongmi2|1108113993.13|pcpid|http%3A%2F%2Fwww.mi.com%2Fhongmi2%2F|http%3A%2F%2Fwww.mi.com%2F; mstuid=1453378297020_4069; xm_vistor=1453378297020_4069_1454030961064-1454031012660; xm_user_www_num=2')
+	.end(function(res){
+		console.log('r');
+});}();
+}
 //http://cart.mi.com/cart/add/2152700002?jsonpcallback=jQuery11130995856573805213_1453949234208&_=1453949234209
 
 //http.createServer().listen(3000);
 
-
+// setInterval(function () {spa
+// 	.get("https://tpssl.hd.mi.com/gettimestamp")
+// 	// .query({jsonpcallback:'jQuery11130995856573805213_1453949234208',_:'1453949234209'})
+// 	.set('Cookie','muuid=1451722291558_2635; xmuuid=XMGUEST-1E88EDE0-C038-11E5-A57F-292260E4EC20; qh[360]=1; mucid=12481.0001A100219138; muctm=; muctmr=; mutid=12481.0001l0dRF964opwNJYn55aef160129092900; AWSELB=717359E51ECF69FBB072CF5F1FD918BF783E0B6A30D7D8D2BAC0E7EA48A0A5080B85046D1E350DAF35F7DE31055F89C2E41D654AE4122C150E177EB7EDAF2DF8AB2BE9587D; xm_link_history=UMHKqCZ1EprNK0P6IhPIOn54%2BDoK1OlUa%2BsV9Zf%2FBS0%3D; xm_order_btauth=ff0fee403b51394afdf7ebe826683b1f; userId=172011891; XM_172011891_UN=.%E4%B8%B8%E5%AD%90; mudjc=12481.0001l0dRF964opwNJYn55aef160129092900; msttime=http%3A%2F%2Fitem.mi.com%2Fbuyphone%2Fhongmi2; msttime1=http%3A%2F%2Fitem.mi.com%2Fbuyphone%2Fhongmi2; lastsource=a.union.mi.com; mstz=766dbbdcc6eafc2c-f572de5474b4f279|%2F%2Fitem.mi.com%2Fbuyphone%2Fhongmi2|1108113993.13|pcpid|http%3A%2F%2Fwww.mi.com%2Fhongmi2%2F|http%3A%2F%2Fwww.mi.com%2F; mstuid=1453378297020_4069; xm_vistor=1453378297020_4069_1454030961064-1454031012660; xm_user_www_num=2')
+// 	.end(function(err,res){
+// 		var time = (res.res.text).match(/\d+/g)[0]*1000;
+		// if(time > 1454032798000){
+				a();
+		// }
+// 		console.log(new Date(time));
+// });},500);
 //checkout
 
 //http://order.mi.com/buy/checkoutPreCheck.php?r=50613.1453960470&jsonpcallback=jQuery1113000016070972196757793_1453960451290&_=1453960451292
